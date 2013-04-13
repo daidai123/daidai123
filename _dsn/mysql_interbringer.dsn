@@ -1,0 +1,10 @@
+[ODBC]
+DRIVER=MySQL ODBC 3.51 Driver
+UID=interbringer
+STMT=
+OPTION=
+PORT=
+PASSWORD=JAMESluo00711
+SERVER=interbringer.db.6730981.hostedresource.com
+DATABASE=interbringer
+DESC=

@@ -1,0 +1,7 @@
+<?php
+session_start();
+if($_SESSION["language_be_choosed"]=="eng") include("language/eng.php");
+else include("language/chn.php");
+require("inc/dbconnect.php");
+error_reporting(0);
+?>

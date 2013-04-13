@@ -1,0 +1,45 @@
+.menu_login_container TABLE TR {
+	VERTICAL-ALIGN: top
+}
+.menu_login_container TABLE TR TD {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 14px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.menu_login_container .inputtext {
+	BORDER-BOTTOM-COLOR: #1d2a5b; BORDER-TOP-COLOR: #1d2a5b; MARGIN: 0px; WIDTH: 142px; BORDER-RIGHT-COLOR: #1d2a5b; BORDER-LEFT-COLOR: #1d2a5b
+}
+.menu_login_container .inputpassword {
+	BORDER-BOTTOM-COLOR: #1d2a5b; BORDER-TOP-COLOR: #1d2a5b; MARGIN: 0px; WIDTH: 142px; BORDER-RIGHT-COLOR: #1d2a5b; BORDER-LEFT-COLOR: #1d2a5b
+}
+.menu_login_container LABEL {
+	MARGIN: 0px; COLOR: #98a9ca; FONT-WEIGHT: normal
+}
+.menu_login_container TD.html7magic {
+	PADDING-BOTTOM: 4px
+}
+.menu_login_container .html7magic LABEL {
+	PADDING-LEFT: 1px; COLOR: #fff
+}
+.menu_login_container .inputcheckbox {
+	MARGIN-LEFT: 0px
+}
+.menu_login_container A {
+	COLOR: #98a9ca
+}
+.menu_login_container A:hover {
+	COLOR: #98a9ca
+}
+.menu_login_container .login_form_label_field {
+	PADDING-BOTTOM: 3px; VERTICAL-ALIGN: middle; PADDING-TOP: 3px
+}
+.ff2 .menu_login_container .html7magic {
+	PADDING-BOTTOM: 3px
+}
+.ff3 .menu_login_container .html7magic {
+	PADDING-BOTTOM: 3px
+}
+.menu_login_container .login_form_label_field INPUT {
+	VERTICAL-ALIGN: middle
+}
+.menu_login_container #email {
+	DIRECTION: ltr
+}

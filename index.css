@@ -1,0 +1,13 @@
+.pagerDB {
+font: 9pt/1.5em Arial, Tahoma, Verdana, "Lucida Grande", sans-serif; color: #333;
+  clear: both;
+}
+.pagerDB a, .pagerDB strong.pagerDB-current {
+  padding: 0.5em;
+}
+ div.pagerDB {clear: both; padding: 0 20px; margin-top: 25px;}
+
+ div.pagerDB a {border: 1px solid #ccc; padding: 0.5em; margin: 0 2px; color: #666; font-size:14px;}
+
+div.pagerDB a:hover {border: 1px solid #8d8630; padding: 0.5em; margin: 0 2px; color: #fff; font-size:14px; background-color:#8d8630; text-decoration:none;}
+div.pagerDB strong {border: 1px solid #534d00; padding: 0.5em; font-size:14px; margin: 0 2px; color: #FFFFFF; background-color: #534d00;}

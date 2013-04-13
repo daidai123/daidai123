@@ -1,0 +1,158 @@
+
+function checkform(id)
+{
+ var standard_email=/^(\w+(?:\.\w+)*)@((?:\w+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+ var standard_phone=/^[0-9]{3}[-][0-9]{3}[-][0-9]{4}$/;
+ var standard_sfsuID=/^[9][0-9]{8}$/;
+ var add_hight=0;
+ var value=document.getElementById(id).value;
+ if(value=="") 
+ {
+  //if(document.getElementById(id+"_check").innerHTML=='')add_hight=10;
+  document.getElementById(id+"_check").innerHTML="<font color='red'>Please don't ignore me!</font>";
+  document.getElementById(id).style.border="#FF0000 solid 1px"; 
+ }
+  else if((id=="email")&&!standard_email.test(document.getElementById(id).value))
+  {
+	document.getElementById(id+"_check").innerHTML="<font color='red'>Please feed me email address! Ex: XXXX@gmail.com, XXXXX@sohu.com</font>";
+    document.getElementById(id).style.border="#FF0000 solid 1px";
+  } else if((id=="confirm_pw")&&(value!=document.getElementById("password_info").value))
+  {
+	document.getElementById(id+"_check").innerHTML="<font color='red'>The password which you have entered do not match!</font>";
+    document.getElementById(id).style.border="#FF0000 solid 1px";
+  }else if((id=="password_info")&&(value==document.getElementById("confirm_pw").value))
+  {
+   document.getElementById(id).style.border="#00FF00 solid 1px";
+   document.getElementById(id+"_check").innerHTML='';
+
+   document.getElementById("confirm_pw").style.border="#00FF00 solid 1px";
+   document.getElementById("confirm_pw_check").innerHTML='';   
+  } 
+  else{
+   document.getElementById(id).style.border="#00FF00 solid 1px";
+   document.getElementById(id+"_check").innerHTML='';
+   } 
+   
+   if((id=="country")||(id=="city")||(id=="state")||(id=="sex")||(id=="question")){
+	   if(value!=""){
+		   
+		     document.getElementById(id+"_border").style.border="";
+             document.getElementById(id+"_check").innerHTML='';
+		   }  
+	   
+	 }
+   
+   
+}
+
+
+
+  function formcheck(page)
+  {
+    var standard_email=/^(\w+(?:\.\w+)*)@((?:\w+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    var standard_phone=/^[0-9]{3}[-][0-9]{3}[-][0-9]{4}$/;
+	var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
+    var conf=true;
+    
+    
+    if(document.getElementById("username_info").value=="")
+	 {
+       document.getElementById("username_info_check").innerHTML="<font color='red'>Please don't ignore me!</font>";
+       document.getElementById("username_info").style.border="#FF0000 solid 1px"; 
+	   conf=false;
+	 }
+	 
+	 if(document.getElementById("realname").value=="")
+	 {
+       document.getElementById("realname_check").innerHTML="<font color='red'>Please don't ignore me!</font>";
+       document.getElementById("realname").style.border="#FF0000 solid 1px";
+	   conf=false;
+	  }
+	  
+	  if(document.getElementById("password_info").value=="")
+	  {
+       document.getElementById("password_info_check").innerHTML="<font color='red'>Please don't ignore me!</font>";
+       document.getElementById("password_info").style.border="#FF0000 solid 1px";
+	   conf=false;
+	   }
+	   
+	   
+	   if(document.getElementById("confirm_pw").value=="")
+	  {
+       document.getElementById("confirm_pw_check").innerHTML="<font color='red'>Please don't ignore me!</font>";
+       document.getElementById("confirm_pw").style.border="#FF0000 solid 1px";
+	   conf=false;
+	   }else if(document.getElementById("confirm_pw").value!=document.getElementById("password_info").value)
+	   {
+       document.getElementById("confirm_pw_check").innerHTML="<font color='red'>The password which you have entered do not match!</font>";
+       document.getElementById("confirm_pw").style.border="#FF0000 solid 1px";
+	   conf=false;
+	 }
+	 
+	 
+	   if(document.getElementById("country").value=="")
+	 {
+       document.getElementById("country_check").innerHTML="<font color='red'>Please don't ignore me!</font>";
+       document.getElementById("country_border").style.border="#FF0000 solid 1px";
+	   conf=false;
+	 }
+	 	   
+	    if(document.getElementById("state").value=="")
+	  {
+        document.getElementById("state_check").innerHTML="<font color='red'>Please don't ignore me!</font>";
+        document.getElementById("state_border").style.border="#FF0000 solid 1px";
+	    conf=false;
+	   }
+	   
+	   
+	   if(document.getElementById("city").value=="")
+	  {
+        document.getElementById("city_check").innerHTML="<font color='red'>Please don't ignore me!</font>";
+        document.getElementById("city_border").style.border="#FF0000 solid 1px";
+	    conf=false;
+	   }
+	   
+	   
+	    if(document.getElementById("email").value=="")
+	  {
+        document.getElementById("email_check").innerHTML="<font color='red'>Please don't ignore me!</font>";
+        document.getElementById("email").style.border="#FF0000 solid 1px";
+	    conf=false;
+	   }
+	   else if(!standard_email.test(document.getElementById("email").value))
+	   {
+	     document.getElementById("email_check").innerHTML="<font color='red'>Please feed me email address! Ex: XXXX@gmail.com, XXXXX@sfsu.edu</font>";
+         document.getElementById("email").style.border="#FF0000 solid 1px";
+		 conf=false;
+	   }
+	   
+	    if(document.getElementById("question").value=="")
+	  {
+        document.getElementById("question_check").innerHTML="<font color='red'>Please don't ignore me!</font>";
+        document.getElementById("question_border").style.border="#FF0000 solid 1px";
+	    conf=false;
+	   }
+	   
+	   if(document.getElementById("answer").value=="")
+	  {
+        document.getElementById("answer_check").innerHTML="<font color='red'>Please don't ignore me!</font>";
+        document.getElementById("answer").style.border="#FF0000 solid 1px";
+	    conf=false;
+	   }
+	   
+	   if(document.getElementById("sex").value=="")
+	  {
+        document.getElementById("sex_check").innerHTML="<font color='red'>Please don't ignore me!</font>";
+        document.getElementById("sex_border").style.border="#FF0000 solid 1px";
+	    conf=false;
+	   }
+	   
+		 
+	    return conf; 
+      }
+	  
+	  	  
+     function ResetClear()
+     {
+      location.reload(true);
+     }
